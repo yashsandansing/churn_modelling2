@@ -1,0 +1,29 @@
+<h1>Welcome to Customer Retention Prediction</h1>
+<h2>Please enter customer details below:</h2>
+<form method=”POST”>
+ {# This hidden_tag is a CSRF security feature. #}
+ {{form.hidden_tag()}}
+ {{form.errors}}
+ {{ form.csrf_token }}
+ {{form.cr_score.label}} {{form.cr_score}}
+ <br>
+ {{form.geo.label}} {{form.geo}}
+ <br>
+ {{form.gen.label}} {{form.gen}}
+ <br>
+ {{form.age.label}} {{form.age}}
+ <br>
+ {{form.ten.label}} {{form.ten}}
+ <br>
+ {{form.bal.label}} {{form.bal}}
+ <br>
+ {{form.num.label}} {{form.num}}
+ <br>
+ {{form.has_card.label}}{{form.has_card}}
+ <br>
+ {{form.is_active.label}} {{form.is_active}}
+ <br>
+ {{form.sal.label}} {{form.sal}}
+ <br>
+ {{form.submit()}}
+</form>
